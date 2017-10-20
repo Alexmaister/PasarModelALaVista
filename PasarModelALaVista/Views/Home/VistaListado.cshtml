@@ -1,0 +1,21 @@
+﻿
+
+@model PasarModelALaVista.Models.clsListadoPersona
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>VistaListado</title>
+</head>
+<body>
+    <div> 
+        <ul>
+       @foreach (var p in Model.llenarLista()){
+           <li>@p.nombre @p.apellidos</li>
+       }
+         </ul>   
+    </div>
+</body>
+</html>

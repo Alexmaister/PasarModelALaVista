@@ -1,0 +1,18 @@
+﻿
+
+@model PasarModelALaVista.Models.clsPersona
+    
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <p>Hola @Model.nombre ,@ViewData["Saludo"]. Hoy es @ViewBag.fecha</p>
+        <p>@Html.ActionLink("Ver Lista", "VistaListado", "HomeController")</p>
+    </div>
+</body>
+</html>
